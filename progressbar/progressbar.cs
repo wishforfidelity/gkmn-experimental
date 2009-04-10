@@ -4,11 +4,7 @@ using System.Threading;
 
 public class Progress {
     public static void fWheel(int digit) {
-        ArrayList wheel = new ArrayList();
-        wheel.Add("\\");
-        wheel.Add("|");
-        wheel.Add("/");
-        wheel.Add("-");
+        ArrayList wheel = new ArrayList() {"\\", "|", "/", "-"};
         Console.Write("\b{0} ", wheel[digit%4]);
     }
 
